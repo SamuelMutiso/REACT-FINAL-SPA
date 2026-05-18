@@ -1,0 +1,44 @@
+{
+  "store_info": [
+    {
+      "id": 1,
+      "name": "SoundWave Gear",
+      "description": "Premium musical instruments and professional live sound recording equipment.",
+      "phone_number": "+254-795-038762"
+    }
+  ],
+  "instruments": [
+    {
+      "id": 1,
+      "name": "Fender Stratocaster",
+      "category": "Guitars",
+      "origin": "USA",
+      "price": 899.99,
+      "description": "Electric guitar featuring classic single-coil pickups and an authentic maple neck."
+    },
+    {
+      "id": 2,
+      "name": "Roland TD-17KVX",
+      "category": "Drums",
+      "origin": "Japan",
+      "price": 1499.00,
+      "description": "V-Drums electronic drum kit with dual-mesh pads and a premium sound engine module."
+    },
+    {
+      "id": 3,
+      "name": "Yamaha P-145",
+      "category": "Keyboards",
+      "origin": "Japan",
+      "price": 549.99,
+      "description": "Digital piano with graded hammer compact keys and grand piano sampling voice arrays."
+    },
+    {
+      "id": 4,
+      "name": "Shure SM7B",
+      "category": "Microphones",
+      "origin": "USA",
+      "price": 399.00,
+      "description": "Dynamic cardioid studio microphone designed for streaming, broadcasting, and vocal monitoring."
+    }
+  ]
+}
