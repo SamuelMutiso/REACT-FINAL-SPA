@@ -1,6 +1,8 @@
+/* 1. ALL ENGINE IMPORTS MUST GO FIRST AT THE VERY TOP */
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
 
+/* 2. TAILWIND V4 DESIGN TOKENS COMMAND CENTER GOES SECOND */
 @theme {
   --font-display: 'Bebas Neue', system-ui, sans-serif;
   --font-body: 'DM Sans', system-ui, sans-serif;
@@ -14,6 +16,7 @@
   --color-neon-rose: #f43f5e;
 }
 
+/* 3. GLOBAL BROWSER OVERRIDES GO THIRD */
 @layer base {
   body {
     background-color: #09090d;

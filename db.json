@@ -21,7 +21,7 @@
       "name": "Roland TD-17KVX",
       "category": "Drums",
       "origin": "Japan",
-      "price": 1499.00,
+      "price": 1499,
       "description": "V-Drums electronic drum kit with dual-mesh pads and a premium sound engine module."
     },
     {
@@ -37,8 +37,16 @@
       "name": "Shure SM7B",
       "category": "Microphones",
       "origin": "USA",
-      "price": 399.00,
+      "price": 399,
       "description": "Dynamic cardioid studio microphone designed for streaming, broadcasting, and vocal monitoring."
+    },
+    {
+      "name": "motif",
+      "origin": "china",
+      "price": 99.99,
+      "description": "best piano for 2000 model",
+      "category": "Keyboards",
+      "id": 5
     }
   ]
 }
