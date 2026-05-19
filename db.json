@@ -47,6 +47,14 @@
       "description": "best piano for 2000 model",
       "category": "Keyboards",
       "id": 5
+    },
+    {
+      "name": "psr",
+      "origin": "london",
+      "price": 12,
+      "description": "ex-uk machine",
+      "category": "Keyboards",
+      "id": 6
     }
   ]
 }
