@@ -1,4 +1,4 @@
-# 🎙️ SOUNDWAVE GEAR — Admin Portal SPA
+#  SOUNDWAVE GEAR — Admin Portal SPA
 
 > A React-based Single Page Application for managing a musical instruments e-commerce store. Built as a final module project demonstrating modern frontend development with advanced React patterns, client-side routing, CRUD data operations, and a comprehensive test suite.
 
