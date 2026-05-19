@@ -45,6 +45,7 @@ function ProductCard({ instrument, onDelete, onUpdate }) {
               type="number" 
               step="0.01" 
               defaultValue={instrument.price} 
+              data-testid="price-input"
               className="bg-studio-bg border border-neon-emerald rounded-lg px-3 py-1.5 text-sm font-mono text-white w-24 outline-none focus:ring-1 focus:ring-neon-emerald" 
             />
             <button onClick={handlePriceUpdate} className="bg-neon-emerald text-studio-bg font-bold text-xs px-3 py-2 rounded-md cursor-pointer hover:opacity-90 transition-opacity">
@@ -63,12 +64,14 @@ function ProductCard({ instrument, onDelete, onUpdate }) {
         <div className="flex gap-2 mt-2">
           <button 
             onClick={() => setIsEditing(true)} 
+            data-testid="edit-btn"
             className="flex-1 py-2 text-xs font-semibold tracking-wider uppercase border border-neon-emerald/30 text-neon-emerald rounded-lg cursor-pointer hover:bg-neon-emerald hover:text-studio-bg transition-all duration-200"
           >
             Edit Price
           </button>
           <button 
             onClick={() => onDelete(instrument.id)} 
+            data-testid="delete-btn"
             className="flex-1 py-2 text-xs font-semibold tracking-wider uppercase border border-neon-rose/30 text-neon-rose rounded-lg cursor-pointer hover:bg-neon-rose hover:text-white transition-all duration-200"
           >
             Delete

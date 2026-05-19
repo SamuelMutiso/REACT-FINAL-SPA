@@ -50,7 +50,11 @@ function AdminPage() {
         />
       </div>
 
-      <StatusBanner type={banner.type} message={banner.message} />
+      {banner.message && (
+  <div data-testid={banner.type === 'error' ? 'error-msg' : 'success-msg'}>
+    <StatusBanner type={banner.type} message={banner.message} />
+  </div>
+)}
 
       <form onSubmit={handleFormSubmission} className="bg-studio-panel border border-studio-border rounded-xl p-6 flex flex-col gap-5 shadow-2xl" noValidate>
         <div className="flex flex-col gap-1.5">
@@ -61,6 +65,7 @@ function AdminPage() {
             type="text" 
             value={formData.name} 
             onChange={e => setFormData({ ...formData, name: e.target.value })} 
+            data-testid="input-name"
             className="bg-studio-bg border border-studio-border rounded-lg p-3 text-sm text-white outline-none focus:border-neon-emerald transition-colors" 
           />
         </div>
@@ -71,6 +76,7 @@ function AdminPage() {
             id={catId} 
             value={formData.category} 
             onChange={e => setFormData({ ...formData, category: e.target.value })} 
+            data-testid="input-category"
             className="bg-studio-bg border border-studio-border rounded-lg p-3 text-sm outline-none focus:border-neon-emerald text-gray-200 cursor-pointer"
           >
             <option value="">Choose category block...</option>
@@ -88,6 +94,7 @@ function AdminPage() {
               type="text" 
               value={formData.origin} 
               onChange={e => setFormData({ ...formData, origin: e.target.value })} 
+              data-testid="input-origin"
               className="bg-studio-bg border border-studio-border rounded-lg p-3 text-sm text-white outline-none focus:border-neon-emerald transition-colors" 
             />
           </div>
@@ -98,7 +105,8 @@ function AdminPage() {
               type="number" 
               step="0.01" 
               value={formData.price} 
-              onChange={e => setFormData({ ...formData, price: e.target.value })} 
+              onChange={e => setFormData({ ...formData, price: e.target.value })}
+               data-testid="input-price"
               className="bg-studio-bg border border-studio-border rounded-lg p-3 text-sm text-white outline-none focus:border-neon-emerald transition-colors font-mono" 
             />
           </div>
@@ -110,6 +118,7 @@ function AdminPage() {
             id={descId} 
             value={formData.description} 
             onChange={e => setFormData({ ...formData, description: e.target.value })} 
+            data-testid="input-description"
             rows={3} 
             className="bg-studio-bg border border-studio-border rounded-lg p-3 text-sm text-white outline-none focus:border-neon-emerald transition-colors resize-none leading-relaxed" 
           />

@@ -10,6 +10,7 @@ function FilterSidebar({ categories, selectedCategory, onSelectCategory, searchQ
           type="text" 
           placeholder="Search by name, origin..." 
           value={searchQuery} 
+          data-testid="search-input"
           onChange={(e) => onSearchChange(e.target.value)} 
           className="bg-studio-bg border border-studio-border rounded-lg px-4 py-2.5 text-sm text-white outline-none focus:border-neon-emerald transition-colors w-full font-body" 
         />

@@ -9,4 +9,10 @@ export default defineConfig({
     tailwindcss(),
 
   ],
+  // VITEST AUTOMATION ENV SHORTCUT SWITCH 
+  test: {
+    environment: 'jsdom',
+    setupFiles: ['./src/test/setup.js'],
+    globals: true,
+  }
 })
